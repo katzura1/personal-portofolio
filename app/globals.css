@@ -1,0 +1,45 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap");
+@import "@fortawesome/fontawesome-free/css/all.min.css";
+
+:root {
+  --background: #ffffff;
+  --foreground: #171717;
+  --color-base-text-strong: #0a0a0a;
+  --color-base-text-weak: #2b2b2b;
+  --color-base-surface: #f5f5f5;
+}
+
+.dark {
+  --background: #655050;
+  --foreground: #ffffff;
+  --color-base-text-strong: #171717;
+  --color-base-text-weak: #d4d4d4;
+  --color-base-surface: #171717;
+}
+
+body {
+  color: var(--foreground);
+  background: var(--background);
+  font-family: Poppins, sans-serif;
+}
+
+.bg-base-surface {
+  background-color: var(--color-base-surface);
+}
+
+.text-base-text-strong {
+  color: var(--color-base-text-strong);
+}
+
+.text-base-text-weak {
+  color: var(--color-base-text-weak);
+}
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+}
