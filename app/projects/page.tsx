@@ -18,6 +18,7 @@ export default function Projects() {
                 <></>
               ) : (
                 <Image
+                  className="grayscale hover:grayscale-0"
                   src={p.thumbnail}
                   fill
                   alt={p.title}
@@ -31,15 +32,16 @@ export default function Projects() {
               <div className="text-base-text-weak text-sm">{p.description}</div>
 
               <div className="flex-1 flex flex-col justify-end">
-              <div className="flex flex-wrap gap-2">
-                {
-                    p.stacks.map((s, k) => (
-                        <div className="w-auto bg-base-surface rounded text-sm p-2" key={k}>
-                            {s}
-                        </div>
-                    ))
-                }
-              </div>
+                <div className="flex flex-wrap gap-2">
+                  {p.stacks.map((s, k) => (
+                    <div
+                      className="w-auto bg-base-surface rounded text-sm p-2"
+                      key={k}
+                    >
+                      {s}
+                    </div>
+                  ))}
+                </div>
               </div>
             </div>
           </div>
