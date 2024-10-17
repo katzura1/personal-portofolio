@@ -30,6 +30,7 @@ export default function Projects() {
               <h2 className="text-lg font-bold">{p.title}</h2>
               <div className="text-base-text-weak text-sm">{p.description}</div>
 
+              <div className="flex-1 flex flex-col justify-end">
               <div className="flex flex-wrap gap-2">
                 {
                     p.stacks.map((s, k) => (
@@ -38,6 +39,7 @@ export default function Projects() {
                         </div>
                     ))
                 }
+              </div>
               </div>
             </div>
           </div>
