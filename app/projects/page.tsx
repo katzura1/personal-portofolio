@@ -10,7 +10,7 @@ export default function Projects() {
 
   return (
     <>
-      <section className="grid grid-cols-2 gap-4 justify-between py-5">
+      <section className="grid grid-cols-1 md:grid-cols-2 gap-4 justify-between py-5">
         {portofolios.map((p, key) => (
           <div className="border rounded flex flex-col" key={key}>
             <div className="bg-neutral-300 relative rounded pt-[56.4706%]">
