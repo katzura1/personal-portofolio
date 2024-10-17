@@ -1,3 +1,9 @@
+# My Personal Portfolio
+
+![Project Demo](https://github.com/katzura1/personal-portofolio/blob/main/public/thumbnail.png?raw=true)
+
+[Demo Link](https://personal-portofolio-denny.vercel.app)
+
 This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
 
 ## Getting Started
