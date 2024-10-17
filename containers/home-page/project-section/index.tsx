@@ -5,7 +5,7 @@ import Link from "next/link";
 export default function ProjectSection() {
   return (
     <section className="flex flex-col gap-9 items-start">
-      <h3 className="text-3xl font-bold">Projects</h3>
+      <h3 className="text-3xl font-bold">Portofolios</h3>
 
       <div className="flex flex-col lg:flex-row gap-4">
         {getTopTwoPortofolios().map((portofolio, key) => (
