@@ -112,12 +112,14 @@ const experiences = [
 ];
 
 const ExperienceSection = () => {
+
+  const options: Intl.DateTimeFormatOptions = {
+    year: "numeric",
+    month: "short",
+  };
+  
   // Function to format date
   const formatDate = (date: Date) => {
-    const options: Intl.DateTimeFormatOptions = {
-      year: "numeric",
-      month: "short",
-    };
     return date.toLocaleDateString(undefined, options);
   };
 
@@ -140,13 +142,13 @@ const ExperienceSection = () => {
 
   return (
     <div className="flex flex-col gap-6">
-      <h3 className="text-lg font-bold">Experience</h3>
+      <h3 className="text-lg font-bold">Experiences</h3>
       {experiences.map((exp, key) => {
         const start = exp.start_from;
         const end = exp.end_from;
-
         const formattedStart = formatDate(start);
         const formattedEnd = formatDate(end);
+        const currentYearMonth = formatDate(new Date());
         const duration = calculateDuration(start, end);
 
         return (
@@ -168,7 +170,7 @@ const ExperienceSection = () => {
               )}
             </div>
             <div className="text-sm text-base-text-weak">
-              {`${formattedStart} - ${formattedEnd} (${
+              {`${formattedStart} - ${formattedEnd == currentYearMonth ? 'Current' : formattedEnd} (${
                 duration.years + " " + duration.months
               })`}
             </div>

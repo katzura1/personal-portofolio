@@ -1,5 +1,6 @@
 "use client";
 
+import Link from "next/link";
 import { useState, useEffect } from "react";
 
 export default function Header() {
@@ -17,9 +18,9 @@ export default function Header() {
   return (
     <header className="sticky top-0 z-20 flex h-16 border-b bg-base-bg/60 backdrop-blur border-base-border">
        <nav className="flex w-full items-center gap-6 sm:gap-9">
-          <a
+          <Link
             className="block overflow-hidden transition-all group relative w-full"
-            href="/"
+            href={"/"}
           >
             <span className="inline-block group-hover:-translate-y-full transition-all ease-in-out">
               Denny
@@ -27,14 +28,14 @@ export default function Header() {
             <span className="inline opacity-0 group-hover:opacity-100 absolute top-0 left-0 translate-y-full group-hover:translate-y-0 transition-all ease-in-out">
               Full Stack Developer
             </span>
-          </a>
+          </Link>
           <div className="flex items-center gap-4 sm:gap-6 transition-all">
-            <a
+            <Link
               className="focus-outline rounded transition-all ease-in-out"
-              href="/projects"
+              href={"/projects"}
             >
               Projects
-            </a>
+            </Link>
           </div>
           <div className="ml-auto flex items-center gap-4 transition-all">
             <a
