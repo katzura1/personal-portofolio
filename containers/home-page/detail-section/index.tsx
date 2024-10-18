@@ -1,3 +1,4 @@
+import { getAllStacks } from "@/libs/data";
 import Link from "next/link";
 
 const myInformation = {
@@ -17,17 +18,7 @@ const myInformation = {
   },
 };
 
-const stacks = [
-  "Laravel",
-  "CodeIgniter",
-  "Flutter",
-  "PHP",
-  "MySQL",
-  "Microsoft SQL Server",
-  "Git/GitHub",
-  "Javascript",
-  "WordPress",
-];
+const stacks = getAllStacks();
 
 const capitalizeFirstLetter = (value: string): string => {
   return value.charAt(0).toUpperCase() + value.slice(1);
@@ -112,12 +103,11 @@ const experiences = [
 ];
 
 const ExperienceSection = () => {
-
   const options: Intl.DateTimeFormatOptions = {
     year: "numeric",
     month: "short",
   };
-  
+
   // Function to format date
   const formatDate = (date: Date) => {
     return date.toLocaleDateString(undefined, options);
@@ -170,9 +160,9 @@ const ExperienceSection = () => {
               )}
             </div>
             <div className="text-sm text-base-text-weak">
-              {`${formattedStart} - ${formattedEnd == currentYearMonth ? 'Current' : formattedEnd} (${
-                duration.years + " " + duration.months
-              })`}
+              {`${formattedStart} - ${
+                formattedEnd == currentYearMonth ? "Current" : formattedEnd
+              } (${duration.years + " " + duration.months})`}
             </div>
             <div className="text-sm text-base-text-weak">{exp.description}</div>
           </div>

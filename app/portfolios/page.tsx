@@ -1,12 +1,12 @@
 import CardProject from "@/components/Card/CardProject";
-import { getAllPortofolios } from "@/libs/data";
+import { getAllPortfolios } from "@/libs/data";
 
 export const metadata = {
   title: "Projects",
 };
 
 export default function Projects() {
-  const portofolios = getAllPortofolios();
+  const portofolios = getAllPortfolios();
 
   return (
     <>
