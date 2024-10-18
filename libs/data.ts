@@ -26,7 +26,7 @@ const portfolios = [
     client: "Freelance Project",
     start_date: new Date("2024-07-01"),
     end_date: new Date("2024-07-30"),
-    thumbnail: "/portofolios/rumah_murah.png",
+    thumbnail: "/portfolios/rumah_murah.png",
     stacks: [
       "WordPress",
       "Elementor",
