@@ -32,9 +32,9 @@ export default function Header() {
           <div className="flex items-center gap-4 sm:gap-6 transition-all">
             <Link
               className="focus-outline rounded transition-all ease-in-out"
-              href={"/projects"}
+              href={"/portofolios"}
             >
-              Projects
+              Portofolio
             </Link>
           </div>
           <div className="ml-auto flex items-center gap-4 transition-all">

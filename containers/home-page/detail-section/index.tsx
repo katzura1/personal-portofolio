@@ -2,7 +2,7 @@ import Link from "next/link";
 
 const myInformation = {
   experience: `${new Date().getFullYear() - 2019} Years`,
-  timeZone: "ICT (UTC+7)",
+  timezone: "ICT (UTC+7)",
   email: {
     text: "denny.az45@gmail.com",
     link: "mailto:denny.az45@gmail.com",
